@@ -62,6 +62,6 @@ Nmap тоже имеет функцию брутфорса, для этого н
 
 С помощью Metasploit модуля `auxiliary/scanner/ssh/ssh_enumusers` можно реализовать подобную проверку
 
-<figure><img src="../.gitbook/assets/ifound_users.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/found_users.png" alt=""><figcaption></figcaption></figure>
 
 Благодаря этому можно увеличить скорость подбора учетных данных, исключив недействительные имена пользователей
