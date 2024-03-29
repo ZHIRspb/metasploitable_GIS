@@ -30,9 +30,9 @@ Nmap не может определить, открыт ли порт, т.к. ф
 
 С помощью rustscan вы можете узнать открытые порты на целевой машине, а затем с помощью nmap и его скриптов определить, что конкретно поднято на этих портах.
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/rustscan.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/nmap.png" alt=""><figcaption></figcaption></figure>
 
 У сканера есть свои опции, например, я использовал опции `-sC` `-sV` `-Pn` и `-p`, где:
 
@@ -45,4 +45,4 @@ Nmap не может определить, открыт ли порт, т.к. ф
 
 Полный список открытых портов на машине Metasploitable:
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/ports.png" alt=""><figcaption></figcaption></figure>
