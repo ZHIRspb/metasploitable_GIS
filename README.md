@@ -15,27 +15,27 @@ Metasploitable - это виртуальная машина, созданная 
 
 После этого откройте VirtualBox выберите Инструменты → Импортировать
 
-<figure><img src=".gitbook/assets/Untitled.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/import.png" alt=""><figcaption></figcaption></figure>
 
 Далее выберите .ova файл, скачанный ранее, и нажмите “Далее”:
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/import2.png" alt=""><figcaption></figcaption></figure>
 
 После этого рекомендую выставить побольше ОЗУ для виртуальной машины:
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/ram.png" alt=""><figcaption></figcaption></figure>
 
 После завершения импорта будет доступна виртуальная машина Metasploitable на Windows
 
 Перейдите в настройки виртуальной машины → Сеть → Тип подключения и выберите “Сетевой мост” и затем запустите машину
 
-<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/network.png" alt=""><figcaption></figcaption></figure>
 
 Логин/пароль для входа: vagrant/vagrant
 
 Откройте PowerShell и введите команду `ipconfig` , чтобы узнать частный IP-адрес вашей машины:
 
-<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/ipconfig.png" alt=""><figcaption></figcaption></figure>
 
 Для эксплуатации уязвимостей вам понадобится “атакующая” машина, рекомендую установить [kali linux](https://www.kali.org/get-kali/#kali-platforms)
 
