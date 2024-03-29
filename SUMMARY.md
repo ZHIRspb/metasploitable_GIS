@@ -5,3 +5,4 @@
   * [Port Scanning](tasks/port-scanning.md)
   * [SSH Bruteforce](tasks/ssh-bruteforce.md)
   * [IIS DoS](tasks/iis-dos.md)
+  * [SNMP Enumeration](tasks/snmp-enumeration.md)
