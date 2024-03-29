@@ -6,7 +6,7 @@
 
 Веб-сервер может доставлять информацию пользователям в нескольких формах, например, в виде статических веб-страниц, закодированных в HTML; посредством обмена файлами в виде загрузок и выгрузок; и текстовые документы, файлы изображений и многое другое.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/nmap_80_port.png" alt=""><figcaption></figcaption></figure>
 
 #### [CVE-2015-1635](https://nvd.nist.gov/vuln/detail/CVE-2015-1635)
 
@@ -18,23 +18,23 @@
 
 Для этого нажмите Start → Administrative Tools → Server Manager
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/adm_tools.png" alt=""><figcaption></figcaption></figure>
 
 Затем во вкладке Roles Summary нажмите на Add Roles
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/add_roles.png" alt=""><figcaption></figcaption></figure>
 
 Затем в появившемся окне выберите Web Server (IIS) и нажмите Next
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/serv_roles.png" alt=""><figcaption></figcaption></figure>
 
 Далее установите необходимые сервисы в соответствии со скриншотом
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/roles_list.png" alt=""><figcaption></figcaption></figure>
 
 Дождитесь установки всех компонентов, после чего по адресу [http://localhost](http://localhost/) будет доступна веб-страница IIS7
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/iis_web.png" alt=""><figcaption></figcaption></figure>
 
 Для реализации DoS-атаки можно использовать готовый эксплойт в Metasploit
 
@@ -42,8 +42,8 @@
 
 Затем нужно выставить параметру `rhosts` значение IP-адреса Metasploitable-машины и запустить скрипт
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/metasploit_dos.png" alt=""><figcaption></figcaption></figure>
 
 В ходе выполнения скрипта атакуемая машина “крашнется”, что свидетельствует об успешной эксплуатации атаки типа “Отказ в обслуживании”
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/windows_dos.png" alt=""><figcaption></figcaption></figure>
