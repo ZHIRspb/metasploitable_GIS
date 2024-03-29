@@ -1,0 +1,7 @@
+root
+user
+service
+admin
+Administrator
+vagrant
+astra
