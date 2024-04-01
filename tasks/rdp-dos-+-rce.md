@@ -24,38 +24,38 @@
 
 После выполнения скрипта на уязвимой машине высветится “синий экран” и она аварийно выключится
 
-<figure><img src="../.gitbook/assets/Untitled 4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/rdp_dos.png" alt=""><figcaption></figcaption></figure>
 
 ### Bluekeep Exploit
 
 Эта служба также уязвима для атаки Bluekeep (CVE-2019-0708), и вы можете использовать соответствующий модуль Metasploit `auxiliary/scanner/rdp/cve_2019_0708_bluekeep` , чтобы проверить наличие этой уязвимости на целевой машине.
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/cve_2019_0708_bluekeep.png" alt=""><figcaption></figcaption></figure>
 
 Для эксплуатации используйте модуль `exploit/windows/rdp/cve_2019_0708_bluekeep_rce`
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/cve_2019_0708_no_session.png" alt=""><figcaption></figcaption></figure>
 
 В выводе мы можем видеть, что экплоит отработал, но сессия не была создана
 
 Причину сбоя и ее решение можно найти в информации о модуле на сайте [rapid7](https://www.rapid7.com/db/modules/exploit/windows/rdp/cve\_2019\_0708\_bluekeep\_rce/)
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/rapid7_desc.png" alt=""><figcaption></figcaption></figure>
 
 Чтобы изменить реестр, нажмите Win+R на виртуальной клавиатуре и введите regedit
 
-<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/keyboard_input.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/regedit.png" alt=""><figcaption></figcaption></figure>
 
 Затем перейдите в папку Computer\HKEY\_LOCAL\_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp
 
-<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/regedit2.png" alt=""><figcaption></figcaption></figure>
 
 Замените значение параметра fDisableCam на 0
 
-<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/fdisablecam.png" alt=""><figcaption></figcaption></figure>
 
 После этого при повторном использовании эксплоита создастся сессия meterpreter с системными правами
 
-<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/cve_2019_0708_shell.png" alt=""><figcaption></figcaption></figure>
