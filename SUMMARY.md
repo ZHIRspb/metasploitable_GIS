@@ -10,3 +10,4 @@
   * [JMX Exploitation](tasks/jmx-exploitation.md)
   * [MySQL Exploitation](tasks/mysql-exploitation.md)
   * [RDP DoS + RCE](tasks/rdp-dos-+-rce.md)
+  * [GlassFish Exploitation](tasks/glassfish-exploitation.md)
