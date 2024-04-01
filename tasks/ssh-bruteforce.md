@@ -14,9 +14,7 @@ SSH также относится к набору утилит, реализую
 
 Для брутфорса можно использовать утилиту [hydra](https://www.kali.org/tools/hydra/)
 
-Чтобы ускорить процесс подбора я буду использовать кастомный список логинов и паролей, среди которых есть валидные имена пользователей `administrator` и `vagrant` и валидный пароль `vagrant`
-
-> Файлы с юзернеймами и паролями находятся в этом каталоге
+Чтобы ускорить процесс подбора я буду использовать кастомный список [логинов](https://github.com/ZHIRspb/metasploitable_GIS/blob/main/tasks/users.txt) и [паролей](https://github.com/ZHIRspb/metasploitable_GIS/blob/main/tasks/passwords.txt), среди которых есть валидные имена пользователей `administrator` и `vagrant` и валидный пароль `vagrant`
 
 Введите следующую команду:
 
