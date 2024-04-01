@@ -7,3 +7,4 @@
   * [IIS DoS](tasks/iis-dos.md)
   * [SNMP Enumeration](tasks/snmp-enumeration.md)
   * [SMB Exploitation](tasks/smb-exploitation.md)
+  * [JMX Exploitation](tasks/jmx-exploitation.md)
