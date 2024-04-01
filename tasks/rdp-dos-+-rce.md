@@ -24,7 +24,7 @@
 
 После выполнения скрипта на уязвимой машине высветится “синий экран” и она аварийно выключится
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Untitled 4.png" alt=""><figcaption></figcaption></figure>
 
 ### Bluekeep Exploit
 
