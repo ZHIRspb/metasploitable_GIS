@@ -2,29 +2,29 @@
 
 Протокол удаленного рабочего стола (Remote Desktop Protocol) - протокол, использующийся для удаленного подключения пользователя к компьютеру
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/nmap_3389_port.png" alt=""><figcaption></figcaption></figure>
 
 По умолчанию протокол удаленного рабочего стола (RDP) не включен ни в одной операционной системе Windows. Metasploitable 3 имеет несколько уязвимостей RDP.
 
 Используя утилиту rdesktop вы можете получить доступ к удаленному компьютеру, если у вас есть действительные учетные данные.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/rdesktop.png" alt=""><figcaption></figcaption></figure>
 
 На машине присутствуют две уязвимости, которые можно проэксплуатировать
 
 ### RDP DoS Exploitation
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/ms12_020_check.png" alt=""><figcaption></figcaption></figure>
 
 Уязвимость MS12-020 может быть использована для того, чтобы реализовать атаку типа “Отказ в обслуживании” на удаленном компьютере.
 
 Для реализации атаки используйте модуль Metasploit `auxiliary/dos/windows/rdp/ms12_020_maxchannelids`
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/ms12_020_maxchannelids.png" alt=""><figcaption></figcaption></figure>
 
 После выполнения скрипта на уязвимой машине высветится “синий экран” и она аварийно выключится
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ### Bluekeep Exploit
 
