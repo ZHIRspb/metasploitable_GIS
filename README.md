@@ -11,7 +11,7 @@ Metasploitable - это виртуальная машина, созданная 
 Перед установкой вам нужно скачать:
 
 * [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
-* Сам образ по этой ссылке (ссылка на ЯД)
+* Сам образ по [этой](https://disk.yandex.ru/d/WxItMsZvNVmbPw) ссылке
 
 После этого откройте VirtualBox выберите Инструменты → Импортировать
 
