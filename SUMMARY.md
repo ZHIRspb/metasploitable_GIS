@@ -12,3 +12,4 @@
   * [RDP DoS + RCE](tasks/rdp-dos-+-rce.md)
   * [GlassFish Exploitation](tasks/glassfish-exploitation.md)
   * [WinRM Exploitation](tasks/winrm-exploitation.md)
+  * [Desktop Manage Engine Exploitation](tasks/desktop-manage-engine-exploitation.md)
